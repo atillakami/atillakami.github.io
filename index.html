@@ -8,27 +8,30 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 0 auto;
             padding: 0 1em;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            justify-content: flex-start;
             background-color: #263238;
             color: #e0f7fa;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
         }
         p.baslik {
             font-size: 2em;
             margin-bottom: 0.5em;
             text-align: center;
             font-weight: 900;
+            max-width: 100%;
+            margin-top: 0.5em;
         }
         p {
             font-size: 1.2em;
             margin-bottom: 1em;
             text-align: center;
-            max-width: 600px;
             line-height: 1.5em;
         }
         .button {
@@ -42,6 +45,9 @@
         .button:hover {
             background-color: #004d40;
         }
+        video {
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -50,5 +56,9 @@
     <p>Atilla ve Kami, Son olaydan sonra geri adım atmalıydınız. Eğer yaptığınız yüzsüzlüğü kabul edip geri adım atmazsanız. Diğer belgeler de yayınlanacaktır. (DM konuşmaları, Furkentten kalan yazışmalar dahil)
         Herkes öğrenecek ne kadar yüzsüz ve yalancı birisi olduğunuzu.
         Diğer yazdıklarınızı silmeye uğrasmayın boşuna bu arada 🙂</p>
+    <video width="600" controls>
+        <source src="assets/adamol.mp4" type="video/mp4">
+        Tarayıcınız video etiketini desteklemiyor.
+    </video>
 </body>
 </html>
